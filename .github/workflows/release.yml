@@ -24,6 +24,16 @@ jobs:
       - name: Bump version
         id: bump
         run: |
+          # If triggered by a tag, use the tag version directly
+          if [[ "${{ github.ref }}" == refs/tags/app-v* ]]; then
+            TAG_VERSION="${{ github.ref_name }}"
+            NEW_VERSION="${TAG_VERSION#app-v}"
+            echo "Using tag version: $NEW_VERSION"
+            echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            echo "tag=$TAG_VERSION" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
           # Read current version from package.json
           CURRENT_VERSION=$(node -p "require('./package.json').version")
           echo "Current version: $CURRENT_VERSION"
@@ -55,6 +65,7 @@ jobs:
           echo "tag=app-v$NEW_VERSION" >> $GITHUB_OUTPUT
 
       - name: Commit version bump
+        if: ${{ !startsWith(github.ref, 'refs/tags/') }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
