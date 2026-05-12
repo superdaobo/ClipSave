@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+src-tauri/target/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+
+# Tauri
+src-tauri/gen/
+
+# Test coverage
+coverage/
+
+# Kiro specs (keep for development reference)
+# .kiro/
+
+# Claude settings
+.claude/
+
+# Playwright MCP artifacts
+.playwright-mcp/

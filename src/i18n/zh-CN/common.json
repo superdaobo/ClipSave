@@ -1,0 +1,121 @@
+{
+  "app": {
+    "name": "ClipSave",
+    "subtitle": "保存你有权保存的公开媒体内容",
+    "version": "版本"
+  },
+  "nav": {
+    "home": "首页",
+    "history": "历史记录",
+    "settings": "设置",
+    "about": "关于",
+    "debug": "调试"
+  },
+  "home": {
+    "inputPlaceholder": "粘贴抖音/小红书分享链接或分享文本",
+    "parseButton": "解析并下载",
+    "clipboardButton": "从剪贴板读取",
+    "complianceNotice": "请仅保存你拥有权利或已获授权的内容",
+    "noLinksFound": "未识别到链接",
+    "batchLimitExceeded": "每次最多处理 20 个链接，已自动截取前 20 个",
+    "emptyQueue": "暂无下载任务",
+    "emptyQueueHint": "粘贴分享链接开始下载"
+  },
+  "task": {
+    "status": {
+      "waiting": "等待中",
+      "parsing": "解析中",
+      "downloading": "下载中",
+      "paused": "已暂停",
+      "completed": "已完成",
+      "failed": "失败",
+      "cancelled": "已取消"
+    },
+    "mediaType": {
+      "video": "视频",
+      "image": "图片",
+      "gif": "动图",
+      "unknown": "未知"
+    },
+    "actions": {
+      "pause": "暂停",
+      "resume": "继续",
+      "cancel": "取消",
+      "retry": "重试",
+      "openFile": "打开文件",
+      "openFolder": "打开目录"
+    },
+    "progress": {
+      "speed": "速度",
+      "remaining": "剩余时间",
+      "size": "大小"
+    }
+  },
+  "history": {
+    "title": "历史记录",
+    "searchPlaceholder": "搜索标题、作者或链接",
+    "filterAll": "全部",
+    "filterCompleted": "已完成",
+    "filterFailed": "失败",
+    "filterCancelled": "已取消",
+    "copyLink": "复制原始链接",
+    "clearHistory": "清空历史",
+    "clearConfirm": "确定要清空所有历史记录吗？此操作不可撤销。",
+    "clearConfirmTitle": "清空历史记录",
+    "confirmButton": "确定",
+    "cancelButton": "取消",
+    "empty": "暂无历史记录",
+    "linkCopied": "链接已复制"
+  },
+  "settings": {
+    "title": "设置",
+    "downloadDir": "下载目录",
+    "downloadDirSelect": "选择目录",
+    "maxConcurrency": "最大并发数",
+    "filenameTemplate": "文件命名模板",
+    "filenameTemplateHint": "支持: {platform}, {author}, {title}, {date}, {index}, {ext}",
+    "autoClipboard": "自动识别剪贴板",
+    "autoClipboardHint": "窗口获得焦点时提示使用剪贴板内容",
+    "keepHistory": "保留下载历史",
+    "debugLog": "启用调试日志",
+    "debugLogHint": "记录详细日志用于问题排查",
+    "theme": "主题",
+    "themeSystem": "跟随系统",
+    "themeLight": "浅色",
+    "themeDark": "深色",
+    "language": "语言",
+    "saved": "设置已保存"
+  },
+  "about": {
+    "title": "关于 ClipSave",
+    "description": "ClipSave 是一款跨平台媒体保存工具，帮助用户保存其有权保存的公开媒体内容。",
+    "disclaimer": "免责声明",
+    "disclaimerText1": "ClipSave 不隶属于抖音、小红书或任何第三方平台。",
+    "disclaimerText2": "用户需自行确保使用行为符合法律和平台条款。",
+    "disclaimerText3": "本工具不会帮助绕过访问控制或版权保护。",
+    "disclaimerText4": "请仅保存你拥有权利或已获授权的内容。",
+    "openSource": "开源项目",
+    "license": "许可证"
+  },
+  "errors": {
+    "ParseFailed": "解析失败：链接不支持或平台页面已变化",
+    "UnsupportedPlatform": "不支持的平台：当前仅支持抖音和小红书",
+    "RestrictedContent": "无法处理：该内容需要登录或不可公开访问",
+    "ContentNotFound": "内容不存在：该链接对应的内容已被删除或不存在",
+    "NetworkError": "网络错误：请检查网络连接后重试",
+    "TimeoutError": "请求超时：网络连接缓慢，请稍后重试",
+    "PermissionDenied": "权限不足：无法访问指定目录",
+    "DiskFullOrIoError": "存储错误：磁盘空间不足或写入失败",
+    "InvalidInput": "输入无效：请检查输入内容",
+    "TooManyRedirects": "重定向过多：链接可能已失效",
+    "UnsafeRedirect": "不安全的重定向：链接指向不受信任的地址",
+    "InvalidTransition": "操作无效：当前状态不允许此操作",
+    "copyDetails": "复制错误详情",
+    "detailsCopied": "错误详情已复制"
+  },
+  "clipboard": {
+    "prompt": "检测到剪贴板中可能包含分享链接，是否使用？",
+    "use": "使用",
+    "dismiss": "忽略"
+  }
+}

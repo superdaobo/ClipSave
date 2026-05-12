@@ -1,0 +1,121 @@
+{
+  "app": {
+    "name": "ClipSave",
+    "subtitle": "Save public media you have rights to",
+    "version": "Version"
+  },
+  "nav": {
+    "home": "Home",
+    "history": "History",
+    "settings": "Settings",
+    "about": "About",
+    "debug": "Debug"
+  },
+  "home": {
+    "inputPlaceholder": "Paste Douyin/Xiaohongshu share link or text",
+    "parseButton": "Parse & Download",
+    "clipboardButton": "Read from Clipboard",
+    "complianceNotice": "Only save content you own or are authorized to save",
+    "noLinksFound": "No links detected",
+    "batchLimitExceeded": "Maximum 20 links per batch. Only the first 20 will be processed.",
+    "emptyQueue": "No download tasks",
+    "emptyQueueHint": "Paste a share link to start downloading"
+  },
+  "task": {
+    "status": {
+      "waiting": "Waiting",
+      "parsing": "Parsing",
+      "downloading": "Downloading",
+      "paused": "Paused",
+      "completed": "Completed",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    },
+    "mediaType": {
+      "video": "Video",
+      "image": "Image",
+      "gif": "GIF",
+      "unknown": "Unknown"
+    },
+    "actions": {
+      "pause": "Pause",
+      "resume": "Resume",
+      "cancel": "Cancel",
+      "retry": "Retry",
+      "openFile": "Open File",
+      "openFolder": "Open Folder"
+    },
+    "progress": {
+      "speed": "Speed",
+      "remaining": "Remaining",
+      "size": "Size"
+    }
+  },
+  "history": {
+    "title": "History",
+    "searchPlaceholder": "Search by title, author, or URL",
+    "filterAll": "All",
+    "filterCompleted": "Completed",
+    "filterFailed": "Failed",
+    "filterCancelled": "Cancelled",
+    "copyLink": "Copy Original Link",
+    "clearHistory": "Clear History",
+    "clearConfirm": "Are you sure you want to clear all history? This cannot be undone.",
+    "clearConfirmTitle": "Clear History",
+    "confirmButton": "Confirm",
+    "cancelButton": "Cancel",
+    "empty": "No history yet",
+    "linkCopied": "Link copied"
+  },
+  "settings": {
+    "title": "Settings",
+    "downloadDir": "Download Directory",
+    "downloadDirSelect": "Select Directory",
+    "maxConcurrency": "Max Concurrent Downloads",
+    "filenameTemplate": "Filename Template",
+    "filenameTemplateHint": "Tokens: {platform}, {author}, {title}, {date}, {index}, {ext}",
+    "autoClipboard": "Auto-detect Clipboard",
+    "autoClipboardHint": "Prompt to use clipboard content when window gains focus",
+    "keepHistory": "Keep Download History",
+    "debugLog": "Enable Debug Logging",
+    "debugLogHint": "Record detailed logs for troubleshooting",
+    "theme": "Theme",
+    "themeSystem": "System",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "language": "Language",
+    "saved": "Settings saved"
+  },
+  "about": {
+    "title": "About ClipSave",
+    "description": "ClipSave is a cross-platform media save tool that helps users save public media content they have rights to.",
+    "disclaimer": "Disclaimer",
+    "disclaimerText1": "ClipSave is not affiliated with Douyin, Xiaohongshu, or any third-party platform.",
+    "disclaimerText2": "Users are responsible for ensuring their usage complies with applicable laws and platform terms.",
+    "disclaimerText3": "This tool does not bypass access controls or copyright protection.",
+    "disclaimerText4": "Only save content you own or are authorized to save.",
+    "openSource": "Open Source",
+    "license": "License"
+  },
+  "errors": {
+    "ParseFailed": "Parse failed: Link not supported or platform page has changed",
+    "UnsupportedPlatform": "Unsupported platform: Currently only Douyin and Xiaohongshu are supported",
+    "RestrictedContent": "Cannot process: This content requires login or is not publicly accessible",
+    "ContentNotFound": "Content not found: The linked content has been deleted or does not exist",
+    "NetworkError": "Network error: Please check your connection and try again",
+    "TimeoutError": "Request timed out: Network is slow, please try again later",
+    "PermissionDenied": "Permission denied: Cannot access the specified directory",
+    "DiskFullOrIoError": "Storage error: Disk full or write failed",
+    "InvalidInput": "Invalid input: Please check your input",
+    "TooManyRedirects": "Too many redirects: Link may be invalid",
+    "UnsafeRedirect": "Unsafe redirect: Link points to an untrusted address",
+    "InvalidTransition": "Invalid operation: Current state does not allow this action",
+    "copyDetails": "Copy Error Details",
+    "detailsCopied": "Error details copied"
+  },
+  "clipboard": {
+    "prompt": "Clipboard may contain a share link. Use it?",
+    "use": "Use",
+    "dismiss": "Dismiss"
+  }
+}
